@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f1e3" />
+  <title>Sachinda & Rishikash | Wedding Invitation</title>
+  <meta name="description" content="Wedding invitation for Sachinda Boro and Rishikash Mishra — 10 December 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="corner corner--tl" aria-hidden="true"></div>
+  <div class="corner corner--tr" aria-hidden="true"></div>
+
+  <header class="hero" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav__monogram" href="#top" aria-label="Home">S <span>&</span> R</a>
+      <a class="nav__link" href="#rsvp">RSVP</a>
+    </nav>
+
+    <div class="hero__ornament" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+    <p class="eyebrow">Together with their families</p>
+    <h1><span>Sachinda</span><em>&</em><span>Rishikash</span></h1>
+    <p class="hero__invite">Joyfully invite you to celebrate their wedding</p>
+
+    <div class="date-card" aria-label="Wedding date and time">
+      <div><strong>10</strong><small>December</small></div>
+      <b aria-hidden="true"></b>
+      <div><strong>2026</strong><small>1:00 — 6:00 PM</small></div>
+    </div>
+
+    <a class="button button--gold" href="#details">View invitation <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main>
+    <section class="invitation section" id="details">
+      <div class="section-heading">
+        <p class="eyebrow">A celebration of love</p>
+        <h2>You’re warmly invited</h2>
+        <div class="flourish" aria-hidden="true">❦</div>
+      </div>
+
+      <div class="invitation__card">
+        <p class="invitation__copy">
+          With joyful hearts, the families of <strong>Sachinda Boro</strong> and
+          <strong>Rishikash Mishra</strong> invite you to share in a beautiful celebration
+          of love, blessings and new beginnings.
+        </p>
+        <p class="invitation__names">Sachinda <span>&</span> Rishikash</p>
+      </div>
+
+      <div class="details-grid">
+        <article class="detail-card">
+          <span class="detail-card__icon" aria-hidden="true">◷</span>
+          <p>Thursday</p>
+          <h3>10 December 2026</h3>
+          <small>1:00 PM — 6:00 PM</small>
+        </article>
+        <article class="detail-card detail-card--venue">
+          <span class="detail-card__icon" aria-hidden="true">⌖</span>
+          <p>Wedding Venue</p>
+          <h3>Join us at the celebration</h3>
+          <a href="https://maps.app.goo.gl/njDaUTVqwXMzF4XYA" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a>
+        </article>
+      </div>
+
+      <div class="countdown" aria-label="Countdown to the wedding">
+        <div><strong id="days">0</strong><span>Days</span></div>
+        <div><strong id="hours">0</strong><span>Hours</span></div>
+        <div><strong id="minutes">0</strong><span>Minutes</span></div>
+        <div><strong id="seconds">0</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="schedule section" aria-labelledby="schedule-title">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">The celebration</p>
+        <h2 id="schedule-title">Wedding Day</h2>
+        <div class="flourish" aria-hidden="true">❦</div>
+      </div>
+      <div class="timeline">
+        <article><time>1:00 PM</time><div><span>01</span><h3>Guest Arrival</h3><p>Welcome, greetings & blessings</p></div></article>
+        <article><time>2:00 PM</time><div><span>02</span><h3>The Ceremony</h3><p>A promise made with love</p></div></article>
+        <article><time>4:00 PM</time><div><span>03</span><h3>Celebrations</h3><p>Pictures, music & happy moments</p></div></article>
+        <article><time>6:00 PM</time><div><span>04</span><h3>Grand Farewell</h3><p>With memories to treasure</p></div></article>
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="rsvp__frame">
+        <p class="eyebrow">Kindly respond</p>
+        <h2 id="rsvp-title">Will you join us?</h2>
+        <p class="rsvp__subtitle">Please let us know by 1 December 2026</p>
+
+        <form id="rsvp-form">
+          <label for="guest-name">Your name</label>
+          <input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required />
+
+          <fieldset>
+            <legend>Will you be attending?</legend>
+            <div class="response-options">
+              <label class="response">
+                <input type="radio" name="response" value="Coming" required />
+                <span><b>Coming</b><small>Joyfully attending</small></span>
+              </label>
+              <label class="response">
+                <input type="radio" name="response" value="Not Coming" />
+                <span><b>Not Coming</b><small>Sending our blessings</small></span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label for="guest-message">A note for the couple <span>(optional)</span></label>
+          <textarea id="guest-message" name="message" rows="3" placeholder="Share your wishes..."></textarea>
+
+          <button class="button button--gold" type="submit">Send RSVP</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer__names">Sachinda <span>&</span> Rishikash</p>
+    <p>10 · 12 · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
